@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">Экология</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">Проблемы</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#skills">Статьи</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Секция превью -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Экология</h1>
+        <p class="home__subtitle"></p>
+      </section>
+      <!-- Секция с рассказом о себе -->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">О проблемах </h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            Вот некоторые распространённые экологические проблемы в России:
+
+            1. Загрязнение воздуха. Выбросы промышленных отходов ухудшают состояние атмосферы.
+
+            2.Вырубка лесов. В стране процесс вырубки лесных массивов практически бесконтрольный, в ходе чего вырубаются сотни гектаров зелёной зоны.
+
+            3.Загрязнение вод и почвы. Промышленные и бытовые отходы загрязняют поверхностные и подземные воды, а также почву.
+
+            4.Радиоактивное загрязнение. На многих атомных станциях оборудование устарело, и ситуация приближается к катастрофической.
+
+Для решения экологических проблем в России разрабатываются программы по устранению проблемы загрязнения воды, почвы и воздуха.
+          </p>
+          <img
+            class="info-block__img"
+            src="../static/img/profile.png"
+            alt="me"
+            width="500"
+            height="500"
+          />
+        </div>
+      </section>
+      <!-- Секция со скиллами -->
+       
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">Статьи</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/python.png"
+                alt="python"
+                width="150"
+                height="150"
+              />
+              <span class="skill__info">Источник</span>
+              <input class="skill__button" type="submit" name="button_python" value="Открыть сайт">
+            </li>
+            <li class="skills-list__skill skill">
+            </li>
+          </ul>
+        </form>
+        {% if button_python%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="https://s2.stc.all.kpcdn.net/family/wp-content/uploads/2023/03/sortirovka_musora_oblogkkaa_960-960x540.jpg" alt="project" width="500">
+              <a class="project__link" href="https://www.kp.ru/family/ecology/sortirovka-musora/?ysclid=m2282xk1ji674096179">Открыть в браузере</a>
+          </div>
+        {% endif %}
+      </section>
+
+      <section class="main__skills skills" id="skills">
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="../static/img/station.png"
+                alt="python"
+                width="200"
+                height="200"
+              />
+      
+      <span class="skill__info">Источник</span>
+              <input class="skill__button" type="submit" name="button_html" value="Открыть сайт">
+            </li>
+            <li class="skills-list__skill skill">
+            </li>
+          </ul>
+        </form>
+        {% if button_html%}
+          <div class="skills__project project" id="project">
+              <img class="project__img" src="https://avatars.mds.yandex.net/i?id=ba7b97de4e9f946576b35380c04fe3e54bc4d6b0-12528217-images-thumbs&n=13" alt="project" width="500">
+              <a class="project__link" href="https://www.kp.ru/family/ecology/globalnoe-poteplenie/?ysclid=m2c0qmft14471167558">Открыть в браузере</a>
+          </div>
+        {% endif %}
+      </section>
+      <!-- Секция с формой обратной связи -->
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </main>
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
